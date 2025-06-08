@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->string('status')->nullable()->after('pekerjaan');
             $table->text('alamat_rt005')->nullable()->after('status');
             $table->text('alamat_ktp')->nullable()->after('alamat_rt005');
-            $table->string('role')->default('user')->after('address');
+            $table->string('role')->default('user')->after('alamat_rt005');
         });
     }
 
